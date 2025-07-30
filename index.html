@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Online Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header id="header">
-    <h1 id="top">Online</h1>
-    <h4 id="top1">Food Shop</h4>
-  </header>
-
-  <hr />
-
-  <nav id="navbar">
-     <img src="logo.webp" />
-
-    <ul id="Navcont">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-
-    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
-      <button>Order Now</button>
-      <button>Prices</button>
-      <button>Special</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./images/scissors.png" />
+      </div>
     </div>
-  </nav>
 
-  <hr>
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Computer</p>
+      </div>
+    </div>
 
-  <section>
-    <h1 style="text-align: center;">Featured Products</h1>
-  </section>
-
-</body>
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
